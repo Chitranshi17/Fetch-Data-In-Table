@@ -8,6 +8,7 @@ const fetchData = async () => {
     
     let tbody = document.createElement('tbody');
 
+
     tbody.innerHTML += `<tr>
       <th>${data.id}</th>
       <td>${data.name}</td>
@@ -16,6 +17,7 @@ const fetchData = async () => {
     </tr>`
 
    let table = document.querySelector('table');
+   
    table.appendChild(tbody)
   });
 }
